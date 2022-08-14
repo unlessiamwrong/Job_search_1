@@ -33,7 +33,7 @@
                 {% for specialty in specialties %}
                     <div class="col-3 col-md-6 col-lg-3">
                         <div class="card pt-4 text-center mb-4">
-                            <img class="mx-auto d-block" src="{{ specialty.picture }}" width="80" height="80" alt="">
+                            <img class="mx-auto d-block" src="{% static specialty.picture %}" width="80" height="80" alt="">
                             <div class="card-body">
                                 <p class="card-text mb-2">{{ specialty.title }}</p>
                                 <p class="card-text"><a
@@ -53,7 +53,7 @@
                     <div class="col-6 col-md-6 col-lg-3">
                         <div class="card pt-4 text-center mb-4">
                             <a href="#" style="max-width: 150px;" class="mx-auto d-block">
-                                <img class="mx-auto d-block mw-100" src="/static/vacancy/{{ company.logo }}" alt="">
+                                <img class="mx-auto d-block mw-100" src="{% static company.logo %}" alt="">
                             </a>
                             <div class="card-body">
                                 <p class="card-text"><a

@@ -1,4 +1,5 @@
 {% extends 'vacancy/base.html' %}
+{% load static %}
 {% block container %}
     <main class="container mt-3">
         <div class="navbar mt-5">
@@ -6,7 +7,7 @@
         </div>
         <section>
             <div class="text-center">
-                <img src="/static/vacancy/{{ company.logo }}" width="130" height="80" alt="">
+                <img src="{% static company.logo %}" width="130" height="80" alt="">
             </div>
             <h1 class="h1 text-center mx-auto mt-0 pt-1" style="font-size: 70px;"><strong>{{ company.name }}</strong>
             </h1>
