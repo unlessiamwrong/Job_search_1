@@ -1,1 +1,1 @@
-**First part of application for job search>**
+**First part of application for job search**
